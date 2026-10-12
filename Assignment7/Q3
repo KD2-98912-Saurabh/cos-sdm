@@ -1,0 +1,12 @@
+if [ -f "$name" ]
+then
+    echo "It is a file."
+    echo "Size: $(du -h "$name" | cut -f1)"
+elif [ -d "$name" ]
+then
+    echo "It is a directory."
+    echo "Contents:"
+    ls "$name"
+else
+    echo "File or directory does not exist."
+fi

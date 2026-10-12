@@ -1,0 +1,4 @@
+echo "Welcome $USER"
+echo "Your Home Directory is: $HOME"
+echo "Contents of your Home Directory:"
+ls -la "$HOME"

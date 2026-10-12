@@ -1,0 +1,14 @@
+
+echo -n "Enter basic salary: "
+read basic
+
+da=$(awk "BEGIN {printf \"%.2f\", $basic * 0.40}")
+hra=$(awk "BEGIN {printf \"%.2f\", $basic * 0.20}")
+gross=$(awk "BEGIN {printf \"%.2f\", $basic + $da + $hra}")
+
+echo "Basic Salary = $basic"
+echo "DA = $da"
+echo "HRA = $hra"
+echo "Gross Salary = $gross"
+
+
